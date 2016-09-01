@@ -24,7 +24,7 @@ FRAMEWORK ?= $(notdir $(MYDIR))
 
 DEVDEFAULTS = $(NDK)/build/tools/dev-defaults.sh
 
-OBJC2 := $(NDK)/$(shell source $(DEVDEFAULTS) && echo $$GNUSTEP_OBJC2_SUBDIR)
+OBJC2 := $(NDK)/sources/objc/gnustep-libobjc2
 
 LLVM_VERSION ?= $(shell source $(DEVDEFAULTS) && echo $$DEFAULT_LLVM_VERSION)
 GCC_VERSION  ?= $(shell source $(DEVDEFAULTS) && echo $$DEFAULT_GCC_VERSION)
